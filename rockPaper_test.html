@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Rock Paper</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="../css/styleRPSTesty.css">
+   
+</head>
+    
+<body>
+
+  
+  <!--Transition Fade Slideshow BG-->
+    <div class="slide fade">
+    <img  src="../images/paperBG1.jpg" class="bg">
+    </div>
+    
+    <div class="slide fade">
+    <img src="../images/scissorBG2.jpg" class="bg" >
+    </div>
+    
+    <div class="slide fade">
+    <img src="../images/rockBG3.jpg" class="bg"  >
+    </div>
+    
+    <div class="container-fluid">
+        <div class="row title">
+            <div class="col-md-5"></div>
+            <div class="col-md-7" position="relative">
+                <div class="box"></div>
+            <h1 id="TITLE">ROCK PAPER SCISSORS</h1>
+                
+                </div>
+        </div>
+        
+<!--Final Score-->
+        <div class="row topScore">
+            <div class="col-md-5"></div>
+            <div class="col-md-3">
+    <p class="Round"></p> 
+                </div>
+        </div>
+        <div class="row topScore">
+            <div class="col-md-5"></div>
+            <div class="col-md-3">
+    <p id="score" class="Round"></p>
+            </div>
+    </div>
+        
+<!--Computer Flipping Choice-->
+    <div class="row butt">
+        <div class="col-md-3 butt">
+    <button type="button" onclick="resume()" id="reset">Reset</button>
+    </div>
+        
+<div class="col-md-2">
+    <div class="hPlay">
+        <table>
+         <tr><button type="button" id="Rock" class="bClick" onclick="pause()">
+                <img class="RPSButton" id="RockPic" src="../images/image3.jpg">
+            </button></tr>   
+            <tr><button type="button" id="Paper" class="bClick" onclick="pause()">
+                <img class="RPSButton" id="PaperPic" src="../images/image1.jpg">
+            </button></tr>
+            <tr><button type="button" id="Scissors" class="bClick" onclick="pause()">
+                <img class="RPSButton" id="ScissorPic" src="../images/image2.jpg">
+            </button></tr>
+        </table>
+    </div>
+</div>
+        
+    <div class="col-md-7 cPlay">
+         <div class="spinImg">
+            <img  src="../images/Image1.jpg" id="playPic">
+        </div>
+        <div class="row bottomScore">
+            <div id="scoreBoard"><p class="inline" id="cScore"></p>0 - 0<p class="inline" id="pScore"></p> </div>
+        </div>
+    </div>      
+  </div>
+
+
+        </div>
+    <script type="text/javascript" src="../script/rpsScripty.js"></script>
+</body>
+     
+</html>

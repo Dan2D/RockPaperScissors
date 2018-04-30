@@ -1,0 +1,135 @@
+@font-face{
+    font-family:"Quicksand_Dash";
+    src:url("..//css/Quicksand_Dash.otf");
+}
+/*Need to figure out how to center containers no matter screen size*/
+.slide{;
+    z-index: -1;
+    position: fixed;
+    width:100%;
+    height:100%;
+    margin:0;
+}
+
+.box {
+    background: black;
+    z-index:-1;
+    opacity:0.5;
+    height:700px;
+    width: 590px;
+    position:absolute;
+    margin-left:-8%;
+
+}
+
+.bg{
+width: 100%;
+height: 100%;
+}
+
+.fade {
+    transition: opacity 4.5s ease-in-out;
+ -moz-transition: opacity 4.5s ease-in-out;
+  -webkit-transition: opacity 4.5s ease-in-out;
+}
+
+#TITLE {
+    margin-left: -8%;
+    height: 75px;
+    font-family:"Quicksand_Dash";
+    display:inline;
+}
+
+.row.title{height: 95px;}
+
+.row.topScore {height:75px;}
+
+.row.butt{height:500px;}
+
+.row.bottomScore{height:75px;}
+
+
+p, #scoreBoard, h1{
+    font-size:50px;
+    color: white;
+    font-family:"Quicksand_Dash";
+    font-weight:100;
+}
+
+.Round{
+    position:relative;
+    font-size:30px;
+    text-align: center;
+    margin: auto;
+}
+
+#score {
+
+}
+
+#reset {
+position: relative;
+ float: right;
+    top: 23%;
+  
+}
+
+.hPlay {
+height: 150px;
+    width: 100%;
+    display: inline-block;
+}
+
+.buttOrg{
+    margin-left: 21%;
+    margin-top: 10%;
+}
+
+button {
+    display: block;
+    height: 90px;
+    width: 90px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+button:hover {
+transition:opacity 0.5s ease-in-out;
+-moz-transition: opacity 0.5s ease-in-out;
+-webkit-transition: opacity 0.5s ease-in-out;
+    opacity:0.5;
+}
+
+.RPSButton {
+    height:75px;
+    width: 75px;
+}
+
+
+.cPlay{
+    height: 500px;
+    width: 100%;
+}
+.spinImg {
+    width: 100%;
+    display: inline-block;
+}
+
+.spinImg  img{
+    position:relative;
+    margin-top: -1%;
+    height: 400px;
+    width: 400px;
+   border: 8px solid black;
+}
+
+/* Rock Paper Scissors Buttons */
+
+
+#scoreBoard {
+    margin-left: 15%;
+}
+
+.inline {
+ display: inline;
+}
